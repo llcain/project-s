@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 200px 300rem 500rem 300rem 200rem;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "navbar navbar"
+    "about about"
+    "what what"
+    "services services"
+    "footer footer";
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: aqua;
+}
+
+.about-section {
+    grid-area: about;
+}
+
+.what-we-do-section {
+    grid-area: what;
+}
+
+.services-section {
+    grid-area: services;
+}
+
+.footer {
+    grid-area: footer;
+}
+
